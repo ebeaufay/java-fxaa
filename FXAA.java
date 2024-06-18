@@ -124,10 +124,8 @@ public class FXAA {
 
     public static void main(String[] args) throws IOException {
         // Example usage:
-        BufferedImage inputImage = ImageIO.read(new File("C:/Users/emeri/Pictures/desktop.png"));
-        long s = System.currentTimeMillis();
+        BufferedImage inputImage = ImageIO.read(new File("input.png"));
         BufferedImage outputImage = applyFXAA(inputImage, 3); // Apply FXAA with 3 passes
-        System.out.println(System.currentTimeMillis() - s);
-        ImageIO.write(outputImage, "png", new File("C:/Users/emeri/Pictures/desktopAA.png"));
+        ImageIO.write(outputImage, "png", new File("output.png"));
     }
 }
