@@ -1,4 +1,3 @@
-package com.escape.core.util;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
